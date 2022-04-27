@@ -1,0 +1,241 @@
+@media (min-width : 1465px){
+    #navbar{
+        left: 4rem;
+    }
+}
+@media (min-width : 1565px){
+    #navbar{
+        left: 8rem;
+    }
+}
+@media (min-width : 1665px){
+    #navbar{
+        left: 12rem;
+    }
+}
+@media (min-width : 1765px){
+    #navbar{
+        left: 14rem;
+    }
+}
+@media (min-width : 1865px){
+    #navbar{
+        left: 18rem;
+    }
+}
+@media (min-width : 1965px){
+    #navbar{
+        left: 21rem;
+    }
+}
+@media (min-width : 2065px){
+    #navbar{
+        left: 24rem;
+    }
+}
+
+
+
+
+
+
+@media (max-width:1200px){
+    html{
+        font-size: 90%;
+    }
+    
+    #chart{
+        grid-template-columns: repeat(2,1fr);
+    }
+}  
+
+@media (max-width:1000px){
+    html{
+        font-size: 80%;
+    }
+    .home{
+        height: 70vh;
+    }
+}
+@media (max-width:950px){
+    .footer{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 2fr;
+        /* grid-template-rows: repeat(2,1fr); */
+    }
+    #footer3{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+@media (max-width:880px){
+    html{
+        font-size: 70%;
+    }
+    .home{
+        height: 60vh;
+    }
+    .chart{
+        padding-top: 1rem;
+    }
+}
+@media (max-width:800px){
+    #chart{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width:780px){
+    html{
+        font-size: 60%;
+    }
+    .home{
+        height: 50vh;
+    }
+}
+@media (max-width:670px){
+    .home{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 40vh;
+    }
+    .home-left-one{
+        text-align: center;
+    }
+    .home-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }.home-right-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-left-two{
+        display: none;
+    }
+    #navbar img{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width:500px){
+    html{
+        font-size: 55%;
+    }
+    #navbar img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+/* ++++++++++++++++ CHART - SECTION RESPONSIVENESS ++++++++++++++++++++++++++++ */
+
+
+@media (max-width : 1190px){
+    #chart{
+        margin-left: 7rem;
+    }
+}
+@media (max-width : 900px){
+    #chart{
+        margin-left: 3rem;
+    }
+    #navbar{
+        margin-top: 0.9rem;
+    }
+    #navbar img{
+        width: 37px;
+        height: 37px;
+    }
+}
+@media (max-width : 800px){
+    #chart{
+        /* padding-left: 5rem; */
+        margin-left: 20rem;
+    }
+}
+@media (max-width : 700px){
+    #chart{
+        /* padding-left: 5rem; */
+        margin-left: 15rem;
+    }
+}
+@media (max-width : 600px){
+    #chart{
+        /* padding-left: 5rem; */
+        margin-left: 10rem;
+    }
+    #navbar{
+        margin-top: 0.7rem;
+    }
+}
+@media (max-width : 500px){
+    #chart{
+        /* padding-left: 5rem; */
+        margin-left: 5rem;
+    }
+    .home{
+        height: 60vh;
+    }
+}
+@media (max-width : 440px){
+    #chart{
+        /* padding-left: 5rem; */
+        margin-left: 3rem;
+    }
+    .home{
+        height: 60vh;
+    }
+    html{
+        font-size: 50%;
+    }
+    .better-view{
+        display: flex;
+    }
+}
+@media (max-width : 420px){
+    #chart{
+        /* padding-left: 5rem; */
+        margin-left: 1rem;
+    }
+    #navbar{
+        margin-top: 1rem;
+    }
+}
+@media (max-width : 395px){
+    #chart{
+        /* padding-left: 5rem; */
+        /* margin-left: -2rem;
+        width: 300px;
+        border: 2px solid white; */
+        /* visibility: hidden; */
+        position: relative;
+        display: none;
+    }
+    #chart::before{
+        content: "We are regret to inform you that your device doesn't allow visibility of chart!!! Please switch to desktop mode for best view";
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        background-color: black;
+        border-radius: 12px;
+        visibility: visible;
+    }
+    
+    html{
+        font-size: 45%;
+    }
+    #navbar ul li:nth-child(2){
+        display: none;
+    }
+    #footer1 ul li:nth-child(2){
+        display: none;
+    }
+}
+

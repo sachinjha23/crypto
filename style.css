@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+   
+}
+/* ++++++++++++++++++++++++++++++++    REUSABLE START ++++++++++++++++++++++++++++++++ */
+h1{
+    font-size: 5.3rem;
+}
+.btn-a{
+    text-decoration: none;
+    color: white;
+    padding: 0.3rem 1.5rem;
+    /* transition: border 1s linear; */
+    border-radius: 20px;
+    /* border: 1px solid white; */
+}
+.btn-a:hover{  
+    border: 1px solid white;
+}
+
+/* ++++++++++++++++++++++++++++++++    SCROLLBAR-SECION START ++++++++++++++++++++++++++++++++ */
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #0f002b;
+}
+::-webkit-scrollbar-thumb{
+    height: 150px;
+    background:linear-gradient(transparent 10%, #6437ba);
+    border-radius: 50px;
+    /* padding: 5px 2px; */
+    transition: 0.3s linear;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:linear-gradient(transparent,orangered);
+
+}
+
+
+/* ++++++++++++++++++++++++++++++++    NAVBAR-SECTION START ++++++++++++++++++++++++++++++++ */
+#navbar{
+    max-width: 1400px;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    /* gap: 2rem; */
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: transparent;
+    justify-content: space-between;
+    padding-top: 0.7rem;
+    /* border: 2px solid yellow; */
+    /* z-index: 1000; */
+}
+#navbar img{
+    width: 50px;
+    margin: 0 2rem;
+    cursor: pointer;
+    z-index: 1200;
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+    z-index: 1200;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0.3rem 1.5rem;
+    transition: border 1s linear;
+    border-radius: 20px;
+    border: none;
+}
+#navbar ul li a:hover{  
+    border: 1px solid white;
+}
+
+
+
+
+
+/* ++++++++++++++++++++++++++++++++    TOP-ICON-SECTION START ++++++++++++++++++++++++++++++++ */
+/* .top-icon{
+    position: fixed;
+    right: 1%;
+    bottom: 2%;
+    z-index: 1000;
+    width: 40px;
+    height: 40px;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border-radius:30% 70% 70% 30% / 30% 30% 70% 70% ;
+    animation: wave 3s linear  infinite ;
+}
+#earth-icon{
+    width: 40px;
+    height: 40px;
+    animation: rotate 8s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(-90deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    75%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes wave{
+    0%{
+        border-radius:56% 44% 70% 30% / 30% 54% 46% 70% ;
+    }
+    50%{
+        border-radius:3% 97% 15% 85% / 72% 0% 100% 28% ; 
+    }
+    100%{
+        border-radius:56% 44% 70% 30% / 30% 54% 46% 70% ;
+
+    }
+} */
+
+
+/* ++++++++++++++++++++++++++++++++    HOME-SECTION START ++++++++++++++++++++++++++++++++ */
+.home{
+    /* position: relative; */
+    max-width: 1400px;
+    max-height: 800px;
+    padding-top: 5rem;
+    width: 100vw;
+    height: 100vh;
+    /* border: 1px solid yellow; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+    background: url("images/background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* z-index: 5000; */
+}
+.home-left , .home-right{
+    /* border:2px dotted white; */
+    max-height: 650px;
+}
+.home-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.home-left-one{
+    /* border: 2px solid greenyellow; */
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+}
+.home-left-one .btn-a{
+    background-color: orangered;
+    border: none;
+    padding: 0.6rem 1.5rem;
+
+}
+.home-left-one .btn-a:hover{
+    transition: 0.3s linear;
+    background-color: #6437ba;
+}
+.home-left-one h1{
+    margin-bottom: 1rem;
+}
+h1 span{
+    color: orangered;
+}
+.home-left-one p{
+    margin-bottom: 2rem;
+}
+.home-left-two{
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    /* border: 1px solid white; */
+}
+
+
+.home-right{
+    display: flex;
+    /* justify-content: baseline; */
+    /* align-items: baseline; */
+    flex-direction: column;
+    justify-content: flex-end;
+    /* align-items: flex-end; */
+}
+.home-right-box{
+    display: flex;
+    width: 95%;
+    height: 25%;
+    /* border: 2px dotted white; */
+    gap: 1rem;
+    justify-content: flex-end;
+}
+.right-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    gap: 0.1rem;
+    padding: 0.2rem 2rem;
+}
+.right-box:nth-child(1):hover{
+    transition: 0.3s linear;
+    background-color: #ec9542;
+}
+.right-box:nth-child(2):hover{
+    transition: 0.3s linear;
+    background-color: #6387e3;
+}
+.right-box:nth-child(3):hover{
+    transition: 0.3s linear;
+    background-color: #bd7b2e;
+}
+.right-box img{
+    height: 40px;
+    width: 40px;
+}
+.right-box h3{
+    font-size: 1.3rem;
+    /* border: 1ox solid white; */
+}
+
+
+/* ++++++++++++++++++++++++++++++++    CHART-SECTION START ++++++++++++++++++++++++++++++++ */
+.chart-section{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    /* border: 2px solid gray; */
+    background-color: #0f002b;
+}
+.chart{
+    max-width: 1400px;
+    width: 97%;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+/* ++++++++++++++++++++++++++++++++    COIN-SECTION START ++++++++++++++++++++++++++++++++ */
+.coin-section{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    /* border: 2px solid gray; */
+    background-color: #0f002b;
+}
+.coin{
+    max-width: 1400px;
+    width: 95%;
+    /* border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(3,1fr); */
+}
+
+
+/* ++++++++++++++++++++++++++++++++    FOOTER-SECTION START ++++++++++++++++++++++++++++++++ */
+
+.footer{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    max-width: 1400px;
+    /* border: 2px solid gray; */
+    background-color: #09001a;
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.footer-box{
+    /* border: 1px dotted white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 2rem; */
+    line-height: 3rem;
+}
+.footer-box ul{
+    list-style: none;
+}
+.footer-box ul li a{
+    text-decoration: none;
+}
+#footer3{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+
+
+/* ++++++++++++++++++++++++++++++++    BETTER-VIEW-SECTION START ++++++++++++++++++++++++++++++++ */
+
+.better-view{
+    width: auto;
+    height: 3rem;
+    background-color: #6437ba;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
